@@ -29,6 +29,7 @@ and applying them on a consistent way is what will make the best results.
 - [DEBUG] Whenever in doubt about why your software does not work, first debug. Debug shows you reality, you can also rely on application logs, but debugging will be almost always faster and easier, you still don´t know how to debug on your current language? you really need to invest time on this!
 - [Devil is on the details] Your github activity is important, when commiting do it like if you are sure you will read this messages on a year from today, you probably will! Be explicit and accountant with your work, this means having descriptive commits.
 - [Boyscout rule] Leave your code better than you found it. Boy Scouts have a rule regarding camping, that they should leave the campground cleaner than they found it, the same applies for code, if you see something is wrong in the context code where you are working at, fix it [Boyscout rule on code](https://medium.com/@biratkirat/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385) 
+- [Eat your dog´s food] Never ever deliver work if it is not tested, you will lose credit and time.
 
 ## Contributing to projects.
 
