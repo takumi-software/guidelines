@@ -30,6 +30,7 @@ and applying them on a consistent way is what will make the best results.
 - [Devil is on the details] Your github activity is important, when commiting do it like if you are sure you will read this messages on a year from today, you probably will! Be explicit and accountant with your work, this means having descriptive commits.
 - [Boyscout rule] Leave your code better than you found it. Boy Scouts have a rule regarding camping, that they should leave the campground cleaner than they found it, the same applies for code, if you see something is wrong in the context code where you are working at, fix it [Boyscout rule on code](https://medium.com/@biratkirat/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385) 
 - [Eat your dog´s food] Never ever deliver work if it is not tested, you will lose credit and time.
+- [A video is worth 1000 images] Literally! If you have a problem with an application try recording it on video to show it to your teammates and ask for help after applying the **Google rule**, then send it over Slack or the team chat, also videos are a good way to explain or make evidence of behaviors. 
 
 ## Contributing to projects.
 
