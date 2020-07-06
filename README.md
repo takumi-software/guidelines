@@ -58,3 +58,11 @@ Still doubts around the kebab case? [Learn more](https://wiki.c2.com/?KebabCase)
 Please always check what it does, it is a powerful tool but use with precaution.
 -  Refactor to variables or methods is really easy when you work with intellij, you just have to right click over the variable and select refactor, then change the name and it will do it for you on all the places, [Watch the video](https://www.youtube.com/watch?v=_Fv7Bn9qwkI)
 
+## How to track your work.
+
+In order to track your work either you are working on several projects for the organization or just one, you will find there are several url´s that can help you keep your eye on the work you are on.
+
+- See all the issues assigned to you that are open, [issues assigned and open](https://github.com/issues?q=user%3Atakumi-software+is%3Aopen)
+- See all the pull requests that open on the organization, [pull requests open](https://github.com/pulls?q=user%3Atakumi-software+is%3Aopen)
+- Simply get all the notifications, [Github Notifications](https://github.com/notifications)
+      
