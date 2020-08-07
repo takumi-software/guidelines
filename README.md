@@ -31,6 +31,9 @@ and applying them on a consistent way is what will make the best results.
 - [Boyscout rule] Leave your code better than you found it. Boy Scouts have a rule regarding camping, that they should leave the campground cleaner than they found it, the same applies for code, if you see something is wrong in the context code where you are working at, fix it [Boyscout rule on code](https://medium.com/@biratkirat/step-8-the-boy-scout-rule-robert-c-martin-uncle-bob-9ac839778385) 
 - [Eat your dog´s food] Never ever deliver work if it is not tested, you will lose credit and time.
 - [A video is worth 1000 images] Literally! If you have a problem with an application try recording it on video to show it to your teammates and ask for help after applying the **Google rule**, then send it over Slack or the team chat, also videos are a good way to explain or make evidence of behaviors. 
+- The master branch MUST always be able to compile, this means that we need to protect the master branch by having pipelines. Protection comes from automation instead of mothod implementation.
+- If there is a none clear syntax on the code either if it is coming from the framework or the mathod/variable naming either refactor the code to apply the German convention or use sugar syntax to make it clearer.
+
 
 ## Contributing to projects.
 
