@@ -61,6 +61,21 @@ Still doubts around the kebab case? [Learn more](https://wiki.c2.com/?KebabCase)
 Please always check what it does, it is a powerful tool but use with precaution.
 -  Refactor to variables or methods is really easy when you work with intellij, you just have to right click over the variable and select refactor, then change the name and it will do it for you on all the places, [Watch the video](https://www.youtube.com/watch?v=_Fv7Bn9qwkI)
 
+### Refactoring Insane Code Blocks
+Always strive to simplify code! Here's a simple recipe to decrease code complexity:
+
+- [ ] search for an `if` statement
+- [ ] cut it
+- [ ] paste it into a new private method called `dummy()`
+- [ ] look for variables needed as parameters - they'll scream red at you
+- [ ] create needed parameters and inject them to your `dummy()` function
+- [ ] read code, search for a descriptive name for the code block and change the dummy name
+- [ ] repeat the process inside the recently create method
+- [ ] read the code searching for possible implementations of early returns, code removal, etc.
+
+This is a simple, but effective way of decreasing the [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) of the codebase.
+
+
 ## How to track your work.
 
 In order to track your work either you are working on several projects for the organization or just one, you will find there are several url´s that can help you keep your eye on the work you are on.
