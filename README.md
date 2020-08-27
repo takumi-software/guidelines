@@ -64,17 +64,16 @@ Please always check what it does, it is a powerful tool but use with precaution.
 ### Refactoring Insane Code Blocks
 Always strive to simplify code! Here's a simple recipe to decrease code complexity:
 
-- [ ] search for an `if` statement
-- [ ] cut it
-- [ ] paste it into a new private method called `dummy()`
-- [ ] look for variables needed as parameters - they'll scream red at you
-- [ ] create needed parameters and inject them to your `dummy()` function
+- [ ] search for an `if`, `for`, `while` statement or a method that is just simply insanely huge
+- [ ] cut it using your IDE csapabilities.
+- [ ] paste it into a new private (private or protected always better, let it be exposed by the parent method where you cut the code block) method called `refactor()`
+- [ ] look for variables needed as parameters - they'll scream red at you by your IDE
+- [ ] create needed parameters and inject them to your `refactor()` method
 - [ ] read code, search for a descriptive name for the code block and change the dummy name
-- [ ] repeat the process inside the recently create method
 - [ ] read the code searching for possible implementations of early returns, code removal, etc.
+- [ ] repeat the process inside the recently create method.
 
 This is a simple, but effective way of decreasing the [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) of the codebase.
-
 
 ## How to track your work.
 
