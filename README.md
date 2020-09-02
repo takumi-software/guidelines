@@ -75,6 +75,26 @@ Always strive to simplify code! Here's a simple recipe to decrease code complexi
 
 This is a simple, but effective way of decreasing the [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) of the codebase.
 
+### How to delete ALL branches, _except_ base branches and active ones
+Whenever we finish working on a PR through a branch and it gets merged in base (wether it is `master`, `develop` or something similar), it is a good practice to **delete this branch**.
+
+This is important so that we decrease the repo size, and avoid having unnecessary data stored.
+
+**IMPORTANT**: As long as you perform a _squash merge_, it is very straight-forward to reverse the project state to a previous version, so there is no need to fear deleting work that has been merged! That's what version control is for.
+
+A quick way to delete ALL branches on origin, except the base (`master`, `develop` and so on) or any other branches being actively worked on is to use the following UNIX command:
+
+`git branch -a --list | grep -vE 'master|develop|<Any other branch names>' | xargs git push <remote name> --delete`
+
+Quick recap:
+
+* `git branch -a --list`: provides a list of _all_ (`-a`) branches, regardless of it being remote or local
+* `| grep -vE '<branch names>'`: The list is then _piped_ (`|`) to a grep command that _filters_ (`-v`) any of the branch names within the quotes, separated by `|` (the OR operator). This is a regex pattern, so we specify it by add `E` on `-vE`.
+* `| xargs git push <remote name> --delete`: Here, we pipe the ouput of the filter and use it as argument (indicated by `xargs`) to the command `git push <remote name> --delete`, which deletes it from remote branch.
+
+If you want to delete **only locally**, you can use this instead:
+`git branch --list | grep -vE 'master|develop|<Any other branch names>' | xargs git branch -d`
+> This will delete any banches not defined in filter, but _only_ if it has already been fully merged in its upstream branch. If you want to force delete, use `-D` instead.
 
 ## How to track your work.
 
