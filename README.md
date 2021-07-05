@@ -1,6 +1,6 @@
 # Guidelines
 
-This projects represent the framework of how we love to work at Takumi software, it is intendended
+This project represents the framework of how we love to work at Takumi software, it is intendended
 to work as a reference on how to do work and also to collaborate with us. 
 
 If you are wondering why we are called Takumi software and have sometime to get to know us more please take a look at
